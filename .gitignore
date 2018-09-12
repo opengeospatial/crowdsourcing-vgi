@@ -1,0 +1,8 @@
+# emacs files
+*~
+
+# JetBrains metadata
+.idea
+
+# mac stuff
+.DS_Store
