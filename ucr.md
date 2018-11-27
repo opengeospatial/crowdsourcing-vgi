@@ -56,7 +56,7 @@ A data provider organisation maintains authoritative data and publishes its data
 
 One of its data consumers builds a search interface over the data, and wishes to enable users of that search interface to notify the organisation when a search they believe should succeed doesn't because corresponding data does not exist in the dataset.
 
-On failing a search of the dataset, a user of the search interface is presented with a form used for notification. They fill in the necessary information, and click notify which calls the data provider's crowdsourcing API.
+On failing a search of the dataset, a user of the search interface is presented with a form used for notification. They fill in the necessary information and accept the terms of notification which states the data provider's purpose for collection and provides the data provider with a license to exploit the notification as per their conditions of use. Once happy, the search interface user clicks notify which calls the data provider's crowdsourcing API.
 
 **Related Deliverables:** Best Practices.
 
@@ -104,7 +104,7 @@ To establish fitness for purpose of data that is part of an aggregated dataset, 
 
 **Related Deliverables:** Best Practices.
 
-**Related Use Cases:** Dataset Completeness Fulfilment.
+**Related Use Cases:** .
 
 ## Enable Ratings by Data Consumers
 
@@ -120,7 +120,7 @@ To enable aggregators and data consumers to trust they have the right to exploit
 
 **Related Deliverables:** Best Practices.
 
-**Related Use Cases:** .
+**Related Use Cases:** Dataset Completeness Fulfilment.
 
 ## Maintain Privacy
 
