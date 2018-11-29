@@ -66,8 +66,8 @@ On failing a search of the dataset, a user of the search interface is presented 
 
 **Contibuted by:** Joseph Abhayaratna, shared with [Smart Cities DWG Use Case 5](https://external.opengeospatial.org/twiki_public/SmartCitiesDWG/SmartCityUC5)
 
-**Full Use Case Description:**
-
+**Full Use Case Description:** <details><summary>Click to expand/collapse</summary>
+<p>
 Leslie uses her favourite City App to search for the restaurant she agreed to meet her friend at. She drives with the City App open on her smartphone to take advantage of its traffic and incident alerting. On her way, she sees a pothole. She marks the pothole’s position using a button on the City App’s navigation screen that drops a pin and the time the feature was identified. When she stops her car, she uses the City App to fill in the remaining details regarding the pothole and submits a road incident report.
 
 Tom, another driver, is also using the City App to take advantage of the its alerting features. He specifies in the City App that he is traveling to work. The City App notifies him that the shortest route has a damaged road surface, and asks whether he wishes to choose another route. Tom elects to take the shortest route. As he approaches the pothole that Leslie previously notified, Tom is asked for confirmation of the damaged road surface. He confirms it. Each user's identity is not revealed.
@@ -75,6 +75,8 @@ Tom, another driver, is also using the City App to take advantage of the its ale
 Stephen, a controller for road maintenance, is looking at the Common Operating Picture road maintenance view. He sees Leslie’s verified notification pop up on the map. The road is marked as high priority based on its historical throughput. As more and more verifications come through, the incident’s priority is increased and a road crew is dispatched at a time when the road is known to be under-utilized based on historical usage statistics. When the crew reaches the pothole, the status of the pothole incident is marked as “Work commenced”, and the City App sends notifications to approaching traffic to help them find an alternate route and allow the road crew to complete the job quickly. Once the road work is complete, the crew updates the status of the pothole, and road users are once again routed down the road.
 
 Over time, historical incidents are used to predict road maintenance needs so that roads can be preemptively maintained as required.
+</p>
+</details>
 
 **Related Deliverables:** [Best Practices](#2-best-practices)
 
