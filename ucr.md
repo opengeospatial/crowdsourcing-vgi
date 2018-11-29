@@ -50,13 +50,16 @@ Has a use case a description that can lead to a testable requirement?
 
 **Contributed by:** Joseph Abhayaratna
 
-**Full Use Case Description:**
+<details><summary><b>Full Use Case Description: Click to expand/collapse</b></summary>
+<p>
 
 A data provider organisation maintains authoritative data and publishes its data on the web for data consumers, and wishes to be notified via an API if data consumers believe there are records missing from a dataset.
 
 One of its data consumers builds a search interface over the data, and wishes to enable users of that search interface to notify the organisation when a search they believe should succeed doesn't because corresponding data does not exist in the dataset.
 
 On failing a search of the dataset, a user of the search interface is presented with a form used for notification. They fill in the necessary information and accept the terms of notification which states the data provider's purpose for collection and provides the data provider with a license to exploit the notification as per their conditions of use. Once happy, the search interface user clicks notify which calls the data provider's crowdsourcing API.
+</p>
+</details>
 
 **Related Deliverables:** [Best Practices](#2-best-practices)
 
@@ -66,7 +69,7 @@ On failing a search of the dataset, a user of the search interface is presented 
 
 **Contibuted by:** Joseph Abhayaratna, shared with [Smart Cities DWG Use Case 5](https://external.opengeospatial.org/twiki_public/SmartCitiesDWG/SmartCityUC5)
 
-**Full Use Case Description:** <details><summary>Click to expand/collapse</summary>
+<details><summary><b>Full Use Case Description: Click to expand/collapse</b></summary>
 <p>
 Leslie uses her favourite City App to search for the restaurant she agreed to meet her friend at. She drives with the City App open on her smartphone to take advantage of its traffic and incident alerting. On her way, she sees a pothole. She marks the pothole’s position using a button on the City App’s navigation screen that drops a pin and the time the feature was identified. When she stops her car, she uses the City App to fill in the remaining details regarding the pothole and submits a road incident report.
 
