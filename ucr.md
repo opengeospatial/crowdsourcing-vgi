@@ -59,7 +59,7 @@ One of its data consumers builds a search interface over the data, and wishes to
 
 On failing a search of the dataset, a user of the search interface is presented with a form used for notification. They fill in the necessary information and accept the terms of notification which states the data provider's purpose for collection and provides the data provider with a license to exploit the notification as per their conditions of use. Once happy, the search interface user clicks notify which calls the data provider's crowdsourcing API.
 </p>
-</details>
+</details><br/>
 
 **Related Deliverables:** [Best Practices](#2-best-practices)
 
@@ -79,7 +79,7 @@ Stephen, a controller for road maintenance, is looking at the Common Operating P
 
 Over time, historical incidents are used to predict road maintenance needs so that roads can be preemptively maintained as required.
 </p>
-</details>
+</details><br/>
 
 **Related Deliverables:** [Best Practices](#2-best-practices)
 
