@@ -50,7 +50,7 @@ Has a use case a description that can lead to a testable requirement?
 
 **Contributed by:** Joseph Abhayaratna
 
-<details><summary><b>Full Use Case Description: Click to expand/collapse</b></summary>
+<details><summary><b>Full Use Case Description (Click to expand/collapse)</b></summary>
 <p>
 
 A data provider organisation maintains authoritative data and publishes its data on the web for data consumers, and wishes to be notified via an API if data consumers believe there are records missing from a dataset.
@@ -69,7 +69,7 @@ On failing a search of the dataset, a user of the search interface is presented 
 
 **Contibuted by:** Joseph Abhayaratna, shared with [Smart Cities DWG Use Case 5](https://external.opengeospatial.org/twiki_public/SmartCitiesDWG/SmartCityUC5)
 
-<details><summary><b>Full Use Case Description: Click to expand/collapse</b></summary>
+<details><summary><b>Full Use Case Description (Click to expand/collapse)</b></summary>
 <p>
 Leslie uses her favourite City App to search for the restaurant she agreed to meet her friend at. She drives with the City App open on her smartphone to take advantage of its traffic and incident alerting. On her way, she sees a pothole. She marks the pothole’s position using a button on the City App’s navigation screen that drops a pin and the time the feature was identified. When she stops her car, she uses the City App to fill in the remaining details regarding the pothole and submits a road incident report.
 
