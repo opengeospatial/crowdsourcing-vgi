@@ -58,9 +58,27 @@ One of its data consumers builds a search interface over the data, and wishes to
 
 On failing a search of the dataset, a user of the search interface is presented with a form used for notification. They fill in the necessary information and accept the terms of notification which states the data provider's purpose for collection and provides the data provider with a license to exploit the notification as per their conditions of use. Once happy, the search interface user clicks notify which calls the data provider's crowdsourcing API.
 
-**Related Deliverables:** Best Practices.
+**Related Deliverables:** [Best Practices](#2-best-practices)
 
-**Related Requirements:** 
+**Related Requirements:** [Capture Categorical Identity](#capture-categorical-identity), [Capture Purpose For Collection](#capture-purpose-for-collection), [Establish License For Use](#establish-licence-for-use)
+
+## 4.2 City Asset Management
+
+**Contibuted by:** Joseph Abhayaratna, shared with [Smart Cities DWG Use Case 5](https://external.opengeospatial.org/twiki_public/SmartCitiesDWG/SmartCityUC5)
+
+**Full Use Case Description:**
+
+Leslie uses her favourite City App to search for the restaurant she agreed to meet her friend at. She drives with the City App open on her smartphone to take advantage of its traffic and incident alerting. On her way, she sees a pothole. She marks the pothole’s position using a button on the City App’s navigation screen that drops a pin and the time the feature was identified. When she stops her car, she uses the City App to fill in the remaining details regarding the pothole and submits a road incident report.
+
+Tom, another driver, is also using the City App to take advantage of the its alerting features. He specifies in the City App that he is traveling to work. The City App notifies him that the shortest route has a damaged road surface, and asks whether he wishes to choose another route. Tom elects to take the shortest route. As he approaches the pothole that Leslie previously notified, Tom is asked for confirmation of the damaged road surface. He confirms it. Each user's identity is not revealed.
+
+Stephen, a controller for road maintenance, is looking at the Common Operating Picture road maintenance view. He sees Leslie’s verified notification pop up on the map. The road is marked as high priority based on its historical throughput. As more and more verifications come through, the incident’s priority is increased and a road crew is dispatched at a time when the road is known to be under-utilized based on historical usage statistics. When the crew reaches the pothole, the status of the pothole incident is marked as “Work commenced”, and the City App sends notifications to approaching traffic to help them find an alternate route and allow the road crew to complete the job quickly. Once the road work is complete, the crew updates the status of the pothole, and road users are once again routed down the road.
+
+Over time, historical incidents are used to predict road maintenance needs so that roads can be preemptively maintained as required.
+
+**Related Deliverables:** [Best Practices](#2-best-practices)
+
+**Related Requirements:** [Capture Categorical Identity](#capture-categorical-identity), [Capture Currency Data and Time](#capture-currency-date-and-time), [Enable Ratings By Data Consumers](#enable-ratings-by-data-consumers), [Maintain Privacy](#maintain-privacy)
 
 # 5. Requirements
 
@@ -70,65 +88,65 @@ This chapter lists the requirements for the deliverables of the group, in alphab
 
 To establish fitness for purpose of data, it is necessary for the supplier of the crowdsourced information to state the positional accuracy of the geographic information.
 
-**Related Deliverables:** Best Practices.
+**Related Deliverables:** [Best Practices](#2-best-practices)
 
-**Related Use Cases:** Dataset Completeness Fulfilment.
+**Related Use Cases:** 
 
 ## Capture Categorical Identity
 
 To establish trust in the supplier of crowdsourcing or volunteered geographic information, it is necessary to be able to identify all records supplied by them. This requirement should be considered in conjunction with requirement Maintain Privacy.
 
-**Related Deliverables:** Best Practices.
+**Related Deliverables:** [Best Practices](#2-best-practices)
 
-**Related Use Cases:** Dataset Completeness Fulfilment.
+**Related Use Cases:** [Dataset Completeness Fulfilment](#41-dataset-completeness-fulfilment), [City Asset Management](#42-city-asset-management)
 
 ## Capture Currency Date and Time
 
 To establish the currency of the data, it is necessary for the supplier of crowdsourced information to state the date and time that the data was captured.
 
-**Related Deliverables:** Best Practices.
+**Related Deliverables:** [Best Practices](#2-best-practices)
 
-**Related Use Cases:** Dataset Completeness Fulfilment.
+**Related Use Cases:** [City Asset Management](#42-city-asset-management)
 
 ## Capture Purpose For Collection
 
 To establish fitness for purpose of data that is part of an aggregated dataset, it is necessary for consumers of the aggregated dataset to be aware of the purpose for which each individual record was collected by the aggregator.
 
-**Related Deliverables:** Best Practices.
+**Related Deliverables:** [Best Practices](#2-best-practices)
 
-**Related Use Cases:** Dataset Completeness Fulfilment.
+**Related Use Cases:** [Dataset Completeness Fulfilment](#41-dataset-completeness-fulfilment)
 
 ## Capture Purpose For Collection By Supplier
 
 To establish fitness for purpose of data that is part of an aggregated dataset, it is necessary for consumers of the aggregated dataset to be aware of the purpose for which the original data was collected by its supplier.
 
-**Related Deliverables:** Best Practices.
+**Related Deliverables:** [Best Practices](#2-best-practices)
 
-**Related Use Cases:** .
+**Related Use Cases:** 
 
-## Enable Ratings by Data Consumers
+## Enable Ratings By Data Consumers
 
 To help establish trust in crowdsourced data that is part of an aggregated dataset, it is necessary for consumers of the aggregated dataset to assess its fitness for similar purposes, and for others to access that assessment to allow it to factor into their own decision to use or not use that data.
 
-**Related Deliverables:** Best Practices.
+**Related Deliverables:** [Best Practices](#2-best-practices)
 
-**Related Use Cases:** .
+**Related Use Cases:** [City Asset Management](#42-city-asset-management)
 
 ## Establish Licence For Use
 
 To enable aggregators and data consumers to trust they have the right to exploit records within an aggregated dataset, the license for attributable for all records.
 
-**Related Deliverables:** Best Practices.
+**Related Deliverables:** [Best Practices](#2-best-practices)
 
-**Related Use Cases:** Dataset Completeness Fulfilment.
+**Related Use Cases:** [Dataset Completeness Fulfilment](#41-dataset-completeness-fulfilment)
 
 ## Maintain Privacy
 
 To enable suppliers of crowdsourcing and volunteered geographic information should have their personal identities protected to ensure their safety.
 
-**Related Deliverables:** Best Practices.
+**Related Deliverables:** [Best Practices](#2-best-practices)
 
-**Related Use Cases:** Dataset Completeness Fulfilment.
+**Related Use Cases:** [City Asset Management](#42-city-asset-management)
 
 # 6. Requirements by deliverable
 
@@ -136,21 +154,21 @@ For convenience, this chapter lists requirements grouped by deliverable
 
 ## 6.1 Best Practices
 
-1. Capture Accuracy of the Geographic Position
+1. [Capture Accuracy of the Geographic Position](#capture-accuracy-of-the-geographic-position)
 
-2. Capture Categorical Identity
+2. [Capture Categorical Identity](#capture-categorical-identity)
 
-3. Capture Currency Date and Time
+3. [Capture Currency Date and Time](#capture-currency-date-and-time)
 
-4. Capture Purpose For Collection
+4. [Capture Purpose For Collection](#capture-purpose-for-collection)
 
-5. Capture Purpose For Collection By Supplier
+5. [Capture Purpose For Collection By Supplier](#capture-purpose-for-collection-by-supplier)
 
-6. Enable Ratings by Data Consumers
+6. [Enable Ratings by Data Consumers](#enable-ratings-by-data-consumers)
 
-7. Establish Licence For Use
+7. [Establish Licence For Use](#establish-licence-for-use)
 
-8. Maintain Privacy
+8. [Maintain Privacy](#maintain-privacy)
 
 # Acknowledgements
 
