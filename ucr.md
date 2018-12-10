@@ -85,6 +85,22 @@ Over time, historical incidents are used to predict road maintenance needs so th
 
 **Related Requirements:** [Capture Categorical Identity](#capture-categorical-identity), [Capture Currency Data and Time](#capture-currency-date-and-time), [Enable Ratings By Data Consumers](#enable-ratings-by-data-consumers), [Maintain Privacy](#maintain-privacy)
 
+## 4.3 Documenting provenance of NAD
+
+**Contibuted by:** Ivana Ivánová
+
+<details><summary><b>Full Use Case Description (Click to expand/collapse)</b></summary>
+<p>
+Leslie, Tom and Stephen use their favourite City App to submit new data to City App's database, as described in Use-Case 4.2. To verify the trust of crowdsourced data, it is essential to document their provenance. Provenance information includes data about who, when and how submitted the data. To facilitate automated quality evaluation of NAD, provenance needs to be documented in machine-readable format, e.g. using W3C's PROV standard.
+  
+</p>
+</details><br/>
+
+**Related Deliverables:** [Best Practices](#2-best-practices)
+
+**Related Requirements:** [Capture Creator Identity](#capture-creator-identity), [Capture Creation Process](#capture-creation-process) [Capture Currency Data and Time](#capture-currency-date-and-time), [Maintain Privacy](#maintain-privacy)
+
+
 # 5. Requirements
 
 This chapter lists the requirements for the deliverables of the group, in alphabetical order.
