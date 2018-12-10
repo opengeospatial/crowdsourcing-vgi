@@ -76,8 +76,6 @@ Leslie uses her favourite City App to search for the restaurant she agreed to me
 Tom, another driver, is also using the City App to take advantage of the its alerting features. He specifies in the City App that he is traveling to work. The City App notifies him that the shortest route has a damaged road surface, and asks whether he wishes to choose another route. Tom elects to take the shortest route. As he approaches the pothole that Leslie previously notified, Tom is asked for confirmation of the damaged road surface. He confirms it. Each user's identity is not revealed.
 
 Stephen, a controller for road maintenance, is looking at the Common Operating Picture road maintenance view. He sees Leslie’s verified notification pop up on the map. The road is marked as high priority based on its historical throughput. As more and more verifications come through, the incident’s priority is increased and a road crew is dispatched at a time when the road is known to be under-utilized based on historical usage statistics. When the crew reaches the pothole, the status of the pothole incident is marked as “Work commenced”, and the City App sends notifications to approaching traffic to help them find an alternate route and allow the road crew to complete the job quickly. Once the road work is complete, the crew updates the status of the pothole, and road users are once again routed down the road.
-
-Over time, historical incidents are used to predict road maintenance needs so that roads can be preemptively maintained as required.
 </p>
 </details><br/>
 
@@ -85,21 +83,21 @@ Over time, historical incidents are used to predict road maintenance needs so th
 
 **Related Requirements:** [Capture Categorical Identity](#capture-categorical-identity), [Capture Currency Data and Time](#capture-currency-date-and-time), [Enable Ratings By Data Consumers](#enable-ratings-by-data-consumers), [Maintain Privacy](#maintain-privacy)
 
-## 4.3 Documenting provenance of NAD
+## 4.3 Utilizing Provenance
 
 **Contibuted by:** Ivana Ivánová
 
+**Extends:** [City Asset Management](#42-city-asset-management)
+
 <details><summary><b>Full Use Case Description (Click to expand/collapse)</b></summary>
 <p>
-Leslie, Tom and Stephen use their favourite City App to submit new data to City App's database, as described in Use-Case 4.2. To verify the trust of crowdsourced data, it is essential to document their provenance. Provenance information includes data about who, when and how submitted the data. To facilitate automated quality evaluation of NAD, provenance needs to be documented in machine-readable format, e.g. using W3C's PROV standard.
-  
+Over time, historical incidents are used to predict road maintenance needs so that roads can be preemptively maintained as required. However, this requires a reasonable amount ot trust to support related decision manking. The City App captures provenance information such as the device used to capture the GPS signal and its related accuracy, any other details about how the data was submitted that might affect its accuracy (e.g., speed Leslie was travelling when she dropped the pin). This information is then used by Stephen and the other road maintenance controllers, along with the number of corresponding notifications, to determine the trust applied to each notifier.
 </p>
 </details><br/>
 
 **Related Deliverables:** [Best Practices](#2-best-practices)
 
-**Related Requirements:** [Capture Creator Identity](#capture-creator-identity), [Capture Creation Process](#capture-creation-process) [Capture Currency Data and Time](#capture-currency-date-and-time), [Maintain Privacy](#maintain-privacy)
-
+**Related Requirements:** [Capture Creation Process](#capture-creation-process), [Capture Accuracy of Geographic Position](#capture-accuracy-of-the-geographic-position), [Machine Readable Provenance](#machine-readable-provenance)
 
 # 5. Requirements
 
@@ -111,7 +109,7 @@ To establish fitness for purpose of data, it is necessary for the supplier of th
 
 **Related Deliverables:** [Best Practices](#2-best-practices)
 
-**Related Use Cases:** 
+**Related Use Cases:** [Utilizing Provenance](#43-utilizing-provenance)
 
 ## Capture Categorical Identity
 
@@ -169,6 +167,22 @@ To enable suppliers of crowdsourcing and volunteered geographic information shou
 
 **Related Use Cases:** [City Asset Management](#42-city-asset-management)
 
+## Machine Readable Provenance
+
+To facilitate automated quality evaluation, provenance needs to be captured and published in a structured, machine-readable format, e.g. using W3C's PROV standard.
+
+**Related Deliverables:** [Best Practices](#2-best-practices)
+
+**Related Use Cases:** [Utilizing Provenance](#43-utilizing-provenance)
+
+## Capture Creation Process
+
+To improve the matching of crowdsourced data to use cases that are satisfied by its quality, it is necessary to understand how it was created and whether there may have been circumstances that affect its fitness for purpose.
+
+**Related Deliverables:** [Best Practices](#2-best-practices)
+
+**Related Use Cases:** [Utilizing Provenance](#43-utilizing-provenance)
+
 # 6. Requirements by deliverable
 
 For convenience, this chapter lists requirements grouped by deliverable
@@ -190,6 +204,10 @@ For convenience, this chapter lists requirements grouped by deliverable
 7. [Establish Licence For Use](#establish-licence-for-use)
 
 8. [Maintain Privacy](#maintain-privacy)
+
+9. [Machine Readable Provenance](#machine-readable-provenance)
+
+10. [Capture Creation Process](#capture-creation-process)
 
 # Acknowledgements
 
